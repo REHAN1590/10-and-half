@@ -1,0 +1,7 @@
+export type Product={id:string;name:string;fit:'oversized'|'regular'|'fullsleeve'|'crop'|'kids';cat:'graphic'|'plain'|'custom';price:number;was?:number;gsm:number;method:string;colors:string[];print:string;tag?:string;sizes:Record<string,number>;desc:string;active?:boolean};
+export const sampleProducts:Product[]=[
+{id:'ov-stayloud',name:'Stay Loud oversized',fit:'oversized',cat:'graphic',price:899,was:1099,gsm:240,method:'Puff print',colors:['black','sand','olive'],print:'STAY LOUD',tag:'new',sizes:{S:12,M:20,L:18,XL:9,XXL:4},desc:'Drop-shoulder oversized cut with a raised puff print.'},
+{id:'rg-smiley',name:'Good Day regular',fit:'regular',cat:'graphic',price:599,gsm:180,method:'DTF',colors:['white','mint','lilac','black'],print:'☺',tag:'bestseller',sizes:{XS:6,S:20,M:30,L:25,XL:12,XXL:3},desc:'Classic regular fit on 180 GSM cotton.'},
+{id:'pl-black',name:'Essential plain tee',fit:'regular',cat:'plain',price:449,gsm:180,method:'No print',colors:['black','white','navy','grey','olive'],print:'',tag:'bestseller',sizes:{XS:20,S:60,M:80,L:80,XL:40,XXL:15},desc:'Bio-washed and pre-shrunk everyday blank.'},
+{id:'cu-custom',name:'Print your own design',fit:'oversized',cat:'custom',price:749,gsm:240,method:'You choose',colors:['black','white','sand','navy','olive'],print:'YOUR DESIGN',tag:'custom',sizes:{XS:99,S:99,M:99,L:99,XL:99,XXL:99},desc:'Upload your artwork and choose screen, DTF, puff or embroidery.'}
+];
